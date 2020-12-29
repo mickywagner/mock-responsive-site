@@ -11,7 +11,10 @@
     padding: 0;
 }
 
-
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
 
 /* ********************************
         Layout          
@@ -21,3 +24,29 @@
 /* ********************************
         Typography          
 *********************************** */
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.subtitle,
+.btn-hero,
+.section-title,
+.nav-item {
+    font-size: 1.125rem;
+}
+
+.hero-title,
+.subtitle,
+.nav-link {
+    /* color: var(--white); */
+}
+
+.hero-title span {
+    color: var(--yellow);
+}
+
+.footer-text,
+.footer-fineprint {
+    color: var(--dark-gray);
+}
