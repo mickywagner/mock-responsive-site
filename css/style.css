@@ -50,3 +50,7 @@ h1 {
 .footer-fineprint {
     color: var(--dark-gray);
 }
+
+strong {
+    font-weight: 700;
+}
