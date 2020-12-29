@@ -31,8 +31,7 @@ h1 {
 
 .subtitle,
 .btn-hero,
-.section-title,
-.nav-item {
+.section-title {
     font-size: 1.125rem;
 }
 
@@ -40,6 +39,12 @@ h1 {
 .subtitle,
 .nav-link {
     /* color: var(--white); */
+}
+
+.nav-item {
+    font-size: 0.875;
+    font-weight: 700;
+    text-transform: lowercase;
 }
 
 .hero-title span {
@@ -53,4 +58,8 @@ h1 {
 
 strong {
     font-weight: 700;
+}
+
+a {
+    text-decoration: none;
 }
