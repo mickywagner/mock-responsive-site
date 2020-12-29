@@ -38,7 +38,7 @@ h1 {
 .hero-title,
 .subtitle,
 .nav-link {
-    /* color: var(--white); */
+    color: var(--white);
 }
 
 .nav-item {
@@ -62,4 +62,37 @@ strong {
 
 a {
     text-decoration: none;
+}
+
+
+/* ********************************
+        Buttons        
+*********************************** */
+
+.btn-hero {
+    background: var(--yellow);
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+/* ********************************
+        Header        
+*********************************** */
+
+header {
+    background: var(--black);
+}
+
+.logo-link {
+    background: var(--yellow);
+}
+
+/* ********************************
+        Hero Section         
+*********************************** */
+
+.hero {
+    background-image: url("../img/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
