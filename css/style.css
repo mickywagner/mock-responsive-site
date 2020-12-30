@@ -213,4 +213,20 @@ footer {
 }
 
 
+@media (min-width: 600px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .s-media {
+        order: 2;
+    }
+
+    .footer-text {
+        max-width: 60%;
+    }
+}
+
 
