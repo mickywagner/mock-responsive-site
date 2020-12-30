@@ -142,6 +142,38 @@ header {
 
 
 /* ********************************
+       Info      
+*********************************** */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 4em;
+}
+
+.col {
+    margin-bottom: 2em;
+}
+
+.section-title {
+    padding-bottom: 0.5em;
+    position: relative;
+    margin-bottom: 0.5em;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    height: 2px;
+    width: 20%;
+    background: var(--yellow);
+}
+
+
+/* ********************************
         Footer        
 *********************************** */
 
