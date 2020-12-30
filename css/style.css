@@ -138,13 +138,7 @@ header {
     background-size: cover;
     background-position: 50% 5%;
     background-repeat: no-repeat;
-    min-height: 450px;  
-}
-
-.hero-title,
-.subtitle,
-.btn-hero {
-    margin-left: 32px;
+    padding: 1em 2em 3em;
 }
 
 .hero-title,
@@ -152,6 +146,7 @@ header {
     max-width: 55%;
     margin-bottom: 32px;
 }
+
 
 
 /* ********************************
