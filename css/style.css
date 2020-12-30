@@ -97,7 +97,7 @@ h1, h2, strong {
 .logo-link {
     background: var(--yellow);
     padding-top: 2em;
-    position: absolute;
+
 }
 
 .nav {
@@ -108,7 +108,7 @@ h1, h2, strong {
     bottom: 0;
     right: 0;
     left: 100%;
-    
+
 }
 
 .navigation-open {
@@ -149,6 +149,15 @@ h1, h2, strong {
     position: absolute;
 }
 
+.open-nav {
+    color: var(--white);
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    padding: 0.5em;
+    margin-left: auto;
+    font-size: 1.5rem;
+}
 /* footer */
 
 .footer {
