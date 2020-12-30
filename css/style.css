@@ -26,7 +26,7 @@ body {
     font-size: 16px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 75px 1fr 361px;
+    grid-template-rows: 75px 1fr auto;
     grid-template-areas: 
         "head head"
         "main main"
@@ -162,12 +162,12 @@ header {
     background-size: cover;
     background-position: 50% 5%;
     background-repeat: no-repeat;
-    padding: 1em 2em 3em;
+    padding: 2em 2em 4em;
 }
 
 .hero-title,
 .subtitle {
-    max-width: 55%;
+    max-width: 65%;
     margin-bottom: 32px;
 }
 
@@ -188,7 +188,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2em 4em;
+    padding: 2em;
 }
 
 .col {
@@ -233,7 +233,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2em;
+    padding: 2.5em;
 }
 
 .s-media {
@@ -259,7 +259,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
-        padding: 1.5em 6.6em;
+        padding: 2.5em 6.6em;
     }
 
     .s-media {
