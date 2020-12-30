@@ -41,26 +41,33 @@
       </div>
     </header>
 
-    <main class="main-grid">
+    <main class="main-grid main-template">
      
         <h1 class="page-title">Contact.</h1>
         <p class="page-subtitle">Let us know how we can help you need and we’ll drive over to your place in our Bluesmobile the following day to discuss the deal.
         </p>
      
         <img class="main-img" alt="mailboxes" src="img/contact.jpg">
-        <div class="main-text">
-        <h2 class="section-title">Getting in touch with us</h2>
-        <p>You can either use the form or send us an email. I'll get back in touch with you as soon as possible!</p>
+        
+        <div class="secondary-text">
+          <h2 class="section-title">Getting in touch with us</h2>
+          <p>You can either use the form or send us an email. I'll get back in touch with you as soon as possible!</p>
         </div>
-        <form class="page-form">
-          <label for="firstname">First Name</label>
-          <input type="text" id="firstname" required>
-          <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" required>
-          <label for="message">Message</label>
-          <input type="text" id="message" required rows="5">
-          <button type="submit">Send</button>
-        </form>
+        
+       
+        <div class="main-text">
+          <form action="#" method="POST" class="page-form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" required>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+            <button type="submit" class="btn btn-hero">Send</button>
+          </form>
+        </div>
+        
       
     </main>
 
