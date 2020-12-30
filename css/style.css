@@ -1,5 +1,6 @@
 :root {
   --yellow: #ffe600;
+  --goldenrod: #ffc400;
   --black: #000;
   --dark-gray: #404040;
   --light-gray: #ebebeb;
@@ -109,12 +110,19 @@ h1, h2, strong {
     text-decoration: none;
     border: 0;
     text-transform: lowercase;
+    cursor: pointer;
+
 }
 
 .btn-hero {
     background: var(--yellow);
     color: #000;
     justify-self: start;
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+    background: var(--goldenrod);
 }
 
 .btn-form {
@@ -221,6 +229,10 @@ h1, h2, strong {
     padding: 0.5em;
     margin-left: auto;
     font-size: 1.5rem;
+}
+
+.active {
+    border-bottom: 1px solid var(--yellow);
 }
 
 @media (min-width: 600px) {
