@@ -17,19 +17,21 @@
     <title>Jake&Elwood</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header main-grid">
       <div class="header-content">
         <a class="logo-link" href="#"
           ><img src="img/logo.svg" alt="James & Elwood Logo"
         /></a>
+        <button aria-label="Open navigation" class="open-nav">&#9776;</button>
 
         <nav class="nav">
+          <button class="close-nav" aria-label="Close navigation">&times;</button>
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="index.html" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link active">About Us</a>
+              <a href="about.html" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
@@ -41,9 +43,9 @@
     <main>
       
     </main>
-    <footer>
+    <footer class="footer main-grid">
       <div class="footer-main">
-        <img src="img/logo.svg" alt="James & Elwood Logo" />
+        <img class="footer-logo" src="img/logo.svg" alt="James & Elwood Logo" />
         <p class="footer-text">
           Two brothers from Chicago that are just trying to pay back their debt
           by helping others with their SEO, SEM, and Content Marketing needs.
@@ -62,6 +64,7 @@
       </ul>
      
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
 
