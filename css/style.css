@@ -89,6 +89,14 @@ h1, h2, strong {
     background: var(--black);
 }
 
+.header-home {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+}
+
+
+
 .header-content {
     display: flex;
     grid-column: 2 / -2;
@@ -108,6 +116,7 @@ h1, h2, strong {
     bottom: 0;
     right: 0;
     left: 100%;
+    transition: transform ease-in-out 0.5s;
 
 }
 
@@ -157,6 +166,33 @@ h1, h2, strong {
     padding: 0.5em;
     margin-left: auto;
     font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .header-home .nav {
+        background: transparent;
+    }
+
+    .open-nav,
+    .close-nav {
+        display: none;
+    }
+
+    .nav {
+        position: initial;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .nav-link {
+        font-size: 0.875rem;
+        margin: 0 1em;
+    }
+
+    
 }
 /* footer */
 
@@ -225,7 +261,7 @@ h1, h2, strong {
     background-image: url("/img/hero-bg.jpg");
     background-size: cover;
     background-position: bottom;
-    padding: 4em 0;
+    padding: 8em 0 4em;
     color: var(--white);
 }
 
@@ -233,9 +269,15 @@ h1, h2, strong {
     grid-column: 2 / -2;
 }
 
+@media (min-width: 400px) {
+    .hero > * {
+        margin-right: 20%;
+    }
+}
+
 @media (min-width: 600px) {
     .hero {
-        padding: 6em 0;
+        padding: 10em 0 6em;
     }
     .hero > * {
         grid-column: 2 / span 2;
