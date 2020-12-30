@@ -74,11 +74,12 @@ h1, h2, strong {
 .main-grid {
     display: grid;
     grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+    column-gap: 2em;
 }
 
 @media (min-width: 600px) {
     .main-grid {
-        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(180px, 320px)) minmax(1em, 1fr);
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px, 320px)) minmax(1em, 1fr);
     }
 }
 
@@ -89,11 +90,13 @@ h1, h2, strong {
     background: var(--light-gray);
     padding: 4em 0;
     text-align: center;
+    grid-template-areas: 
+        ". social ."
+        ". main .";
 }
 
-.footer-main,
-.s-media {
-    grid-column: 2 / -2;
+.footer-main {
+   grid-area: main;
 }
 
 .footer-logo,
@@ -109,10 +112,10 @@ h1, h2, strong {
 }
 
 .s-media {
-    order: -1;
     display: flex;
     justify-content: center;
     margin: 0 0 2em;
+    grid-area: social;
 }
 
 .s-media-link i {
@@ -121,6 +124,24 @@ h1, h2, strong {
     margin: 0 0.25em;
 }
 
+
+@media (min-width: 600px) {
+    .footer {
+        text-align: left;
+        grid-template-areas: 
+            ". main main social ."
+        ;
+        
+    }
+
+    .s-media {
+        justify-content: flex-end;
+        align-self: baseline;
+    }
+
+
+    
+}
 
 /* ==================
     hero area
@@ -162,7 +183,14 @@ h1, h2, strong {
 }
 
 @media (min-width: 600px) {
+    .col {
+        grid-column: span 1;
+    
+    }
 
+    .col:first-child {
+        grid-column: 2 / span 1;
+    }
 }
 
 /* ==================
