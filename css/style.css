@@ -51,6 +51,17 @@ h1, h2, strong {
     margin-top: 1.25rem;
 }
 
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.page-subtitle,
+.section-title {
+    font-size: 1.125rem;
+    margin-top: 1.5em;
+}
+
 /* buttons */
 
 .btn {
@@ -310,8 +321,33 @@ h1, h2, strong {
 }
 
 /* ==================
-    info section
+    Page section
 ===================== */
 
+.page-title,
+.page-subtitle,
+.main-img,
+.main-text {
+    grid-column: 2 / -2;
+}
 
+.page-title,
+.page-subtitle {
+    text-align: center;
+    font-weight: 700;
+}
+
+.main-img {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .main-img {
+        grid-column: 2 / span 1;
+    }
+
+    .main-text {
+        grid-column: 3 / span 2;
+    }
+}
 
