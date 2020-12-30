@@ -120,6 +120,7 @@ header {
 .logo-link {
     background: var(--yellow);
     margin-right: 1em;
+    padding: 2em 0.5em 0;
 }
 
 .header-content {
@@ -128,6 +129,10 @@ header {
 }
 
 /* Navigation */
+
+.active {
+    border-bottom: 1px solid var(--yellow);
+}
 
 
 @media (min-width: 675px) {
@@ -145,14 +150,12 @@ header {
         margin: 0 1em;
     }
  
- 
  }
 
 
 /* ********************************
         Hero Section         
 *********************************** */
-
 
 .hero {
     background-image: url("../img/hero-bg.jpg");
@@ -170,7 +173,8 @@ header {
 
 @media (min-width: 675px) {
     .hero {
-        padding-left: 6.6em;
+        padding: 5.5em 6.6em 8em;
+        background-position: 60% center;
     }
  }
 
