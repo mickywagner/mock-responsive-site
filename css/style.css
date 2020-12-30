@@ -119,6 +119,7 @@ header {
 
 .logo-link {
     background: var(--yellow);
+    margin-right: 1em;
 }
 
 .header-content {
@@ -129,9 +130,29 @@ header {
 /* Navigation */
 
 
+@media (min-width: 675px) {
+    .header-content {
+        padding: 0 4.7em;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 0 1em;
+    }
+ 
+ 
+ }
+
+
 /* ********************************
         Hero Section         
 *********************************** */
+
 
 .hero {
     background-image: url("../img/hero-bg.jpg");
@@ -147,6 +168,12 @@ header {
     margin-bottom: 32px;
 }
 
+@media (min-width: 675px) {
+    .hero {
+        padding-left: 6.6em;
+    }
+ }
+
 
 
 /* ********************************
@@ -161,7 +188,8 @@ header {
 }
 
 .col {
-    margin-bottom: 2em;
+    margin: 2em;
+    line-height: 1.5em;
 }
 
 .section-title {
@@ -178,6 +206,15 @@ header {
     height: 2px;
     width: 20%;
     background: var(--yellow);
+}
+
+@media (min-width: 675px) {
+   .info {
+       flex-direction: row;
+       padding: 2em 6em;
+   }
+
+
 }
 
 
@@ -213,11 +250,12 @@ footer {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 675px) {
     footer {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
+        padding: 1.5em 6.6em;
     }
 
     .s-media {
