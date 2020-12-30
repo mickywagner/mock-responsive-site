@@ -8,8 +8,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 ul {
@@ -21,7 +19,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    color: #404040;
+    color: var(--dark-gray);
     line-height: 1.6;
 }
 
@@ -35,7 +33,7 @@ h1, h2, strong {
 }
 
 .accent-color {
-    color: #FFE600;
+    color: var(--yellow);
 }
 
 
@@ -43,6 +41,12 @@ h1, h2, strong {
     font-size: 1.5rem;
     line-height: 1.4;
     margin-bottom: 0;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    color: var(--black);
+    margin-top: 1.25rem;
 }
 
 /* buttons */
@@ -54,8 +58,8 @@ h1, h2, strong {
     text-decoration: none;
 }
 
-.btn-primary {
-    background: #FFE600;
+.btn-hero {
+    background: var(--yellow);
     color: #000;
     justify-self: start;
 }
@@ -70,6 +74,34 @@ h1, h2, strong {
     grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
 }
 
+/* footer */
+
+.footer {
+    background: var(--light-gray);
+    padding: 4em 0;
+}
+
+.footer {
+    background: var(--light-gray);
+    text-align: center;
+}
+
+.footer-main,
+.s-media {
+    grid-column: 2 / -2;
+}
+
+.s-media {
+    order: -1;
+    display: flex;
+    justify-content: center;
+}
+
+i {
+    color: var(--black);
+    font-size: 2rem;
+    margin: 0 0.25em;
+}
 
 
 /* ==================
@@ -77,9 +109,9 @@ h1, h2, strong {
 ===================== */
 
 .hero {
-    background-image: url(img/hero-bg.jpg);
+    background-image: url("/img/hero-bg.jpg");
     padding: 4em 0;
-    color: #fff;
+    color: var(--white);
 }
 
 .hero > * {
@@ -90,4 +122,20 @@ h1, h2, strong {
 /* ==================
     info section
 ===================== */
+
+.info {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.col {
+    grid-column: 2 / -2;
+}
+
+
+/* ==================
+    info section
+===================== */
+
+
 
