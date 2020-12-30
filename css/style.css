@@ -349,5 +349,14 @@ h1, h2, strong {
     .main-text {
         grid-column: 3 / span 2;
     }
+
+}
+
+
+/* form */
+
+.page-form {
+    grid-column: 2 / -2;
+    display: grid;
 }
 
