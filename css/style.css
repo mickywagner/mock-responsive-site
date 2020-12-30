@@ -106,6 +106,7 @@ i {
     background: var(--yellow);
     font-weight: 700;
     text-transform: lowercase;
+    padding: 0.5em 1em;
 }
 
 /* ********************************
@@ -135,8 +136,21 @@ header {
 .hero {
     background-image: url("../img/hero-bg.jpg");
     background-size: cover;
+    background-position: 50% 5%;
     background-repeat: no-repeat;
-    min-height: 350px;
+    min-height: 450px;  
+}
+
+.hero-title,
+.subtitle,
+.btn-hero {
+    margin-left: 32px;
+}
+
+.hero-title,
+.subtitle {
+    max-width: 55%;
+    margin-bottom: 32px;
 }
 
 
