@@ -25,6 +25,10 @@ body {
     line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /* ==================
     Typography
@@ -45,10 +49,31 @@ h1, h2, strong {
     margin-bottom: 0;
 }
 
+.subtitle {
+    font-size: 1.125rem;
+}
+
 .section-title {
     font-size: 1.125rem;
     color: var(--black);
     margin-top: 1.25rem;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--yellow);
+}
+
+.section-title-center::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title:first-child {
+    margin-top: 0;
 }
 
 .page-title {
@@ -56,11 +81,13 @@ h1, h2, strong {
     margin-bottom: 0;
 }
 
-.page-subtitle,
-.section-title {
+.page-subtitle {
     font-size: 1.125rem;
-    margin-top: 1.5em;
+    margin: .5em 0 3em;
 }
+
+
+
 
 /* buttons */
 
@@ -321,15 +348,23 @@ h1, h2, strong {
 }
 
 /* ==================
-    Page section
+    Template Page
 ===================== */
 
-.page-title,
-.page-subtitle,
-.main-img,
-.main-text {
+.main-template {
+    padding: 4em 0;
+}
+
+.main-template > * {
     grid-column: 2 / -2;
 }
+
+.main-img {
+    margin: 0 auto 1.5em;
+    box-shadow: 5px 5px 0 var(--black), 10px 10px 0 var(--yellow);
+    
+}
+
 
 .page-title,
 .page-subtitle {
@@ -337,13 +372,10 @@ h1, h2, strong {
     font-weight: 700;
 }
 
-.main-img {
-    width: 100%;
-}
 
 @media (min-width: 600px) {
     .main-img {
-        grid-column: 2 / span 1;
+        grid-column: 2;
     }
 
     .main-text {
