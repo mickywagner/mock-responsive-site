@@ -2,15 +2,15 @@
 
 <h3>Screenshots</h3>
 <strong>Homepage</strong>
-<img src="screenshots/home_full.png" width="70%">
+<img src="screenshots/home_full.png" width="70%" align="left">
 <img src="screenshots/home_mobile.png" width="25%" align="right">
 
 <strong>About</strong>
-<img src="screenshots/about_full.png" width="70%">
+<img src="screenshots/about_full.png" width="70%" align="left">
 <img src="screenshots/about_mobile.png" width="25%" align="right">
 
 <strong>Contact</strong>
-<img src="screenshots/contact_full.png" width="70%">
+<img src="screenshots/contact_full.png" width="70%" align="left">
 <img src="screenshots/contact_mobile.png" width="25%" align="right">
 
 <h3>About This Project</h3>
