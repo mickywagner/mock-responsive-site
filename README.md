@@ -2,23 +2,23 @@
 
 <h3>Screenshots</h3>
 <strong>Homepage</strong>
-<img src="screenshots/home_full.png">
-<img src="screenshots/home_mobile.png">
+<img src="screenshots/home_full.png" width="75%">
+<img src="screenshots/home_mobile.png" width="25%">
 
 <strong>About</strong>
-<img src="screenshots/about_full.png">
-<img src="screenshots/about_mobile.png">
+<img src="screenshots/about_full.png" width="75%">
+<img src="screenshots/about_mobile.png" width="25%">
 
 <strong>Contact</strong>
-<img src="screenshots/contact_full.png">
-<img src="screenshots/contact_mobile.png">
+<img src="screenshots/contact_full.png" width="75%">
+<img src="screenshots/contact_mobile.png" width="25%">
 
 <h3>About This Project</h3>
-<p>My first JS calculator app. Created as one of the early projects in the Web Development course on <a href="https://www.theodinproject.com/">Odin Project</a>.
-The calculator can add, subtract, multiply, and divide both positive and negative numbers. The idea being to practice operators>
+<p>This was the final project for the <a href="https://scrimba.com/learn/responsive">Scrimba Reponsive Design Bootcamp</a>, a course that covers the ins and outs of responsive design, focusing particulary on the power of Flexbox and Grid in layouts, accessiblity in markup, and making your CSS reusable. It's a three page business site with a responsive layout created primarily using CSS-Grid. It also includes a mobile menu controlled by a little JS. 
 </p>
-<p>Full project brief <a href="https://www.theodinproject.com/courses/web-development-101/lessons/calculator">here</a></p>
-<p>Live version <a href="https://mickywagner.github.io/javascript-calculator/">here</a>.</p>
+
+
+<p>Live version <a href="https://mickywagner.github.io/mock-responsive-site/">here</a>.</p>
 
 
 <h3>Technical Sheet</h3>
@@ -27,6 +27,7 @@ The calculator can add, subtract, multiply, and divide both positive and negativ
 <ul>
   <li>HTML 5</li>
   <li>CSS 3</li>
+  <li>CSS Grid</li>
   <li>Javascript</li>
 </ul>
 </strong>
