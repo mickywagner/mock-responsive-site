@@ -62,7 +62,6 @@ h1 {
 }
 
 .nav-item {
-    font-size: 0.875rem;
     font-weight: 700;
     text-transform: lowercase;
 }
@@ -74,6 +73,12 @@ h1 {
 .footer-text,
 .footer-fineprint {
     color: var(--dark-gray);
+    opacity: 37%;
+}
+
+.nav-item,
+.footer-fineprint {
+    font-size: 0.875rem;
 }
 
 strong {
@@ -87,6 +92,11 @@ footer{
 
 a {
     text-decoration: none;
+}
+
+i {
+    color: var(--black);
+    font-size: 1.5em;
 }
 
 
@@ -137,15 +147,30 @@ header {
 
 footer {
     background: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+
+.s-media {
+    display: flex;
+    order: -1;
+}
+
+.s-media-link {
+    margin: 0 0.2em;
+}
+
+.s-media {
+    margin-bottom: 1.25em;
+}
+
+.footer-text {
+    margin: 1em 0 2.25em;
 }
 
 
 
-/* ********************************
-        Icons        
-*********************************** */
-
-i {
-    color: black;
-    font-size: 2em;
-}
