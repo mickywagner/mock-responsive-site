@@ -107,12 +107,18 @@ h1, h2, strong {
     font-weight: 700;
     margin-top: .5em;
     text-decoration: none;
+    border: 0;
+    text-transform: lowercase;
 }
 
 .btn-hero {
     background: var(--yellow);
     color: #000;
     justify-self: start;
+}
+
+.btn-form {
+    justify-self: end;
 }
 
 
@@ -393,13 +399,31 @@ h1, h2, strong {
         grid-column: 3 / span 2;
     }
 
+    .secondary-text {
+        order: 2;
+    }
+
 }
 
 
 /* form */
 
-.page-form {
-    grid-column: 2 / -2;
+.contact-form {
     display: grid;
 }
 
+label {
+    font-weight: 700;
+}
+
+input, 
+textarea {
+    margin-bottom: 0.75em;
+    padding: 0.4em;
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
