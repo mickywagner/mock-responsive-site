@@ -76,6 +76,13 @@ h1, h2, strong {
     grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
 }
 
+@media (min-width: 600px) {
+    .main-grid {
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(180px, 320px)) minmax(1em, 1fr);
+    }
+}
+
+
 /* footer */
 
 .footer {
@@ -121,6 +128,8 @@ h1, h2, strong {
 
 .hero {
     background-image: url("/img/hero-bg.jpg");
+    background-size: cover;
+    background-position: bottom;
     padding: 4em 0;
     color: var(--white);
 }
@@ -129,6 +138,15 @@ h1, h2, strong {
     grid-column: 2 / -2;
 }
 
+@media (min-width: 600px) {
+    .hero {
+        padding: 6em 0;
+    }
+    .hero > * {
+        grid-column: 2 / span 2;
+        
+    }
+}
 
 /* ==================
     info section
@@ -143,6 +161,9 @@ h1, h2, strong {
     grid-column: 2 / -2;
 }
 
+@media (min-width: 600px) {
+
+}
 
 /* ==================
     info section
