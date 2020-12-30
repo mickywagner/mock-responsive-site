@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 
 /* ********************************
         Layout          
@@ -23,7 +27,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-auto-rows: auto;
+    grid-auto-rows: 75px auto;
     grid-template-areas: 
         "head head"
         "main main"
@@ -35,8 +39,6 @@ body {
 header {grid-area: head;}
 footer {grid-area: foot;}
 main {grid-area: main;}
-  
-
 
 
 /* ********************************
@@ -78,6 +80,11 @@ strong {
     font-weight: 700;
 }
 
+header,
+footer{
+    padding: 0 2em;
+}
+
 a {
     text-decoration: none;
 }
@@ -104,6 +111,14 @@ header {
 .logo-link {
     background: var(--yellow);
 }
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation */
+
 
 /* ********************************
         Hero Section         
