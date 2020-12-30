@@ -12,6 +12,8 @@
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -79,10 +81,6 @@ h1, h2, strong {
 .footer {
     background: var(--light-gray);
     padding: 4em 0;
-}
-
-.footer {
-    background: var(--light-gray);
     text-align: center;
 }
 
@@ -91,15 +89,28 @@ h1, h2, strong {
     grid-column: 2 / -2;
 }
 
+.footer-logo,
+.footer-text,
+.footer-fineprint {
+    color: var(--dark-gray);
+    opacity: 37%;
+}
+
+.footer-fineprint {
+    font-size: 0.75rem;
+    margin-top: 4em;
+}
+
 .s-media {
     order: -1;
     display: flex;
     justify-content: center;
+    margin: 0 0 2em;
 }
 
-i {
+.s-media-link i {
     color: var(--black);
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin: 0 0.25em;
 }
 
